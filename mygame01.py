@@ -36,23 +36,35 @@ rooms = {
             'Hall' : {
                   'south' : 'Kitchen',
                   'east'  : 'Dining Room',
+                  'north' : 'Bathroom',
                   'item'  : 'key'
                 },
 
             'Kitchen' : {
                   'north' : 'Hall',
-                  'item'  : 'monster',
+                  'item'  : 'monster'
                 },
 
             'Dining Room' : {
                   'west' : 'Hall',
                   'north' : 'Living Room'
-             },
+                },
 
             'Living Room' : {
-                  'south' : 'Dining Room'
-             },
-          
+                  'south' : 'Dining Room',
+                  'west'  : 'Bathroom',
+                  'east'  : 'Bedroom'
+                },
+
+            'Bathroom' : {
+                  'south' : 'Dining Room',
+                  'east'  : 'Living Room'
+                },
+         
+            'Bedroom' : {
+                  'west' : 'Living Room'
+                },
+
             'Garden' : {
                   'north' : 'Dining Room'
             }
